@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Mata Kuliah dan SKS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0000FF;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: #DDE6D5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #857F7F;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #B4C2C4;
+        }
+        .button {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4caf50;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+   
+    </style>
 </head>
 <body>
-<a href="list_data.php">Lihat Daftar Data</a>
+
 <br>
     <h2>Input Mata Kuliah dan SKS</h2>
     <form action="" method="post">
@@ -60,7 +131,12 @@
 
         <br>
         <input type="submit" value="Submit">
-    </form>
+         </form>
+         <br>
+         <div class="button-container">
+        <a href="list_data.php" class="button">Lihat daftar data Mahasiswa</a>
+    </div>
+
     <?php
     // Periksa apakah formulir telah disubmit
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
