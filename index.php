@@ -134,7 +134,7 @@
          </form>
          <br>
          <div class="button-container">
-        <a href="list_data.php" class="button">Lihat daftar data Mahasiswa</a>
+        <a href="list_data.php" class="button">Lihat Daftar Data Mahasiswa</a>
     </div>
 
     <?php

@@ -112,7 +112,7 @@
         ?>
     </table>
     <div class="button-container">
-        <a href="index.php" class="button">Kembali</a>
+        <a href="index.php" class="button">kembali</a>
     </div>
 
 </body>
